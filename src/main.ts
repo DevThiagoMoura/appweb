@@ -13,6 +13,7 @@ app.listen(port, () => {
     console.log(`web server running in http://localhost:${port}`);
 });
 
+app.use(Express.static(path.join(__dirname, '../public')));
 
 app.get('/sobre', (request, response) => {
     response.sendFile(path.join(__dirname, '../view/sobre.html'));
