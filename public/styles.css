@@ -1,5 +1,124 @@
-h1{
-    font-size: 20px;
-    color: red;
-    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #1f2937;
+}
+
+.topo {
+  background: linear-gradient(135deg, #1d4ed8, #0f172a);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.topo h1 {
+  margin: 0 0 10px;
+}
+
+.topo p {
+  margin: 0 0 20px;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2,
+.card h1 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button,
+.botao-link {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.botao-link:hover {
+  background-color: #1d4ed8;
+}
+
+.secundario,
+.secundario-link {
+  background-color: #64748b;
+}
+
+.secundario:hover,
+.secundario-link:hover {
+  background-color: #475569;
+}
+
+.centralizado {
+  text-align: center;
 }
